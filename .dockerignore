@@ -1,0 +1,50 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore environment variables files
+.env
+
+# Ignore virtual environments
+env/
+.venv/
+venv/
+ENV/
+
+# Ignore build and distribution directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Ignore instance folder (for Flask applications)
+instance/
+
+# Ignore test and coverage results
+.cache
+.coverage
+*.cover
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore Docker related files
+docker-compose.yml
+Dockerfile
+
+# Ignore any other files you don't want in the Docker image

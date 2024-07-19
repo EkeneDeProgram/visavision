@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1B Visa Insight</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="app-name">VisaVision.com</div>
+    </div>
+    <div id="nav">
+        <a href="/">Home</a>
+        <a href="/employers">Employers</a>
+        <a href="/h1b_visa">H-1B Visa</a>
+        <a href="/reports">Reports</a>
+        <a href="/visa_approval_predictions">Predictions</a>
+    </div>
+    <div class="container">
+        <div id="content">
+            <h1>H1B Visa Insights</h1>
+
+            <h2>Summary:</h2>
+            <ul>
+                <li>Highest Fiscal Year Application: {{ summary['Highest Fiscal Year Application'] }}</li>
+                <li>Highest State Application: {{ summary['Highest State Application'] }}</li>
+                <li>Highest City Application: {{ summary['Highest City Application'] }}</li>
+                <li>Highest Employer Application: {{ summary['Highest Employer Application'] }}</li>
+                <li>Highest Employer Initial Approval: {{ summary['Highest Employer Initial Approval'] }}</li>
+                <li>Highest Fiscal Year Initial Approval: {{ summary['Highest Fiscal Year Initial Approval'] }}</li>
+                <li>Highest State Initial Approval: {{ summary['Highest State Initial Approval'] }}</li>
+                <li>Highest City Initial Approval: {{ summary['Highest City Initial Approval'] }}</li>
+                <li>Rate of Application: {{ summary['Rate of Application'] }}</li>
+                <li>Rate of Initial Approval: {{ summary['Rate of Initial Approval'] }}</li>
+            </ul>
+
+            <div id="charts"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/d3_visualization.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Predictions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='js/approval_predictions.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/state_and_city_names.js') }}" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div class="app-name">VisaVision.com</div>
+    </div>
+    <div id="nav">
+        <a href="/">Home</a>
+        <a href="/employers">Employers</a>
+        <a href="/h1b_visa">H-1B Visa</a> <!-- Added link to H-1B Visa page -->
+        <a href="/reports">Reports</a>
+        <a href="/visa_approval_predictions">Predictions</a>
+    </div>
+    <div class="container">
+        <div id="content">
+            <h1>Visa Predictions</h1>
+            <p>This page will provide predictions about visas based on AI models or other predictive analytics.</p>
+            <!-- Add your content about predictions here -->
+            <div id="content">
+                <h1>Visa Approval Predictions</h1>
+                <form id="predictionForm">
+                    <label for="employer">Employer:</label>
+                    <input type="text" id="employer" name="employer" required><br>
+                    <label for="city">City:</label>
+                    <select id="city" name="city" required></select><br>
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required></select><br>
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" min="2024" max="2026" required><br>
+                    <label for="salary">Salary:</label>
+                    <input type="number" id="salary" name="salary" required><br>
+                    <button type="submit">Predict</button>
+                </form>
+                <div id="predictionResult"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

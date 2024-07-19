@@ -1,0 +1,285 @@
+/* Global styles for the entire document */
+body {
+    font-family: Arial, sans-serif; /* Set the default font family */
+    line-height: 1.6; /* Set the line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0; /* Set a light gray background color */
+}
+
+/* Container for the main content */
+.container {
+    max-width: 1000px; /* Set a maximum width */
+    margin: 30px auto; /* Center the container and add vertical margins */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #fff; /* Set a white background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 8px; /* Round the corners */
+}
+
+/* Header styles */
+#header {
+    background-color: #007bff; /* Set the background color to blue */
+    color: #fff; /* Set the text color to white */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center the text */
+}
+
+.app-name {
+    font-size: 1.5em; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Navigation styles */
+#nav {
+    background-color: #343a40; /* Set the background color to dark gray */
+    padding: 10px 0; /* Add vertical padding */
+    text-align: center; /* Center the navigation links */
+}
+
+#nav a {
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 20px; /* Add space between links */
+    font-weight: bold; /* Make the text bold */
+}
+
+#nav a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Main content styles */
+#main-content {
+    padding: 20px; /* Add padding */
+}
+
+#main-content section {
+    margin-bottom: 30px; /* Add space between sections */
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333; /* Set the text color to dark gray */
+}
+
+h1 {
+    font-size: 28px; /* Set the font size */
+    margin-bottom: 20px; /* Add bottom margin */
+    color: #007bff; /* Set the text color to blue */
+    border-bottom: 2px solid #007bff; /* Add a blue bottom border */
+    padding-bottom: 10px; /* Add padding below the text */
+}
+
+h2 {
+    font-size: 24px; /* Set the font size */
+    margin-top: 30px; /* Add top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin: 10px 0; /* Add vertical margin */
+    padding: 10px; /* Add padding */
+    background-color: #f9f9f9; /* Set background color */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+}
+
+/* Enhanced styling for the employer section */
+#content_id h1 {
+    font-size: 32px; /* Set the font size */
+    margin-bottom: 20px; /* Add bottom margin */
+    color: #007bff; /* Set the text color to blue */
+    border-bottom: 2px solid #007bff; /* Add a blue bottom border */
+    padding-bottom: 10px; /* Add padding below the text */
+    text-align: center; /* Center the text */
+}
+
+#content_id p {
+    font-size: 18px; /* Set the font size */
+    margin-bottom: 20px; /* Add bottom margin */
+    color: #333; /* Set the text color to dark gray */
+    text-align: center; /* Center the text */
+}
+
+/* Search input styling */
+#searchInput {
+    width: calc(100% - 40px); /* Set the width with padding adjustment */
+    padding: 15px; /* Add padding */
+    margin-bottom: 20px; /* Add bottom margin */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    display: block; /* Make the input a block element */
+    margin: 0 auto 20px auto; /* Center the input and add vertical margin */
+    font-size: 16px; /* Set the font size */
+}
+
+/* Employers list styling */
+#employersList {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the list */
+}
+
+#employersList li {
+    margin: 10px 0; /* Add vertical margin */
+    padding: 15px; /* Add padding */
+    background-color: #f9f9f9; /* Set background color */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+    transition: background-color 0.3s ease; /* Add a transition for hover effect */
+}
+
+#employersList li:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+}
+
+#employersList a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Set the text color to blue */
+    font-weight: bold; /* Make the text bold */
+}
+
+#employersList a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Charts container styling */
+#charts {
+    margin-top: 20px; /* Add top margin */
+    overflow: hidden; /* Prevent charts from overflowing */
+}
+
+/* Detail item styling */
+.detail-item {
+    margin: 10px 0; /* Add vertical margin */
+}
+
+.detail-item strong {
+    color: #007bff; /* Set the text color to blue */
+}
+
+/* Form styling */
+form {
+    background-color: white; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+form label {
+    display: block; /* Make the label a block element */
+    margin: 10px 0 5px; /* Add vertical margin */
+}
+
+form input {
+    width: calc(100% - 20px); /* Set the width with padding adjustment */
+    padding: 10px; /* Add padding */
+    margin-bottom: 15px; /* Add bottom margin */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+}
+
+form button {
+    background-color: #4CAF50; /* Set the background color to green */
+    color: white; /* Set the text color to white */
+    padding: 10px 15px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+form button:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+#predictionResult {
+    margin-top: 20px; /* Add top margin */
+    background-color: #fff; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Flash error message styling */
+.flash-error {
+    color: red; /* Set the text color to red */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px 0; /* Add vertical margin */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Adjust the maximum width */
+        margin: 20px auto; /* Adjust the vertical margin */
+        padding: 15px; /* Adjust the padding */
+    }
+
+    #header, #nav, #main-content, #charts, #predictionResult {
+        padding: 15px; /* Adjust the padding */
+    }
+
+    #nav a {
+        margin-right: 10px; /* Adjust the space between links */
+    }
+
+    h1, h2 {
+        font-size: 22px; /* Adjust the font size */
+    }
+
+    .app-name {
+        font-size: 1.2em; /* Adjust the font size */
+    }
+
+    #searchInput {
+        width: calc(100% - 30px); /* Adjust the width */
+        padding: 10px; /* Adjust the padding */
+    }
+
+    #employersList li {
+        padding: 10px; /* Adjust the padding */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; /* Adjust the maximum width */
+        margin: 10px auto; /* Adjust the vertical margin */
+        padding: 10px; /* Adjust the padding */
+    }
+
+    #header, #nav, #main-content, #charts, #predictionResult {
+        padding: 10px; /* Adjust the padding */
+    }
+
+    #nav a {
+        display: block; /* Make the links block elements */
+        margin: 5px 0; /* Adjust the vertical margin */
+    }
+
+    h1, h2 {
+        font-size: 18px; /* Adjust the font size */
+    }
+
+    .app-name {
+        font-size: 1em; /* Adjust the font size */
+    }
+
+    #searchInput {
+        width: calc(100% - 20px); /* Adjust the width */
+        padding: 8px; /* Adjust the padding */
+    }
+
+    #employersList li {
+        padding: 8px; /* Adjust the padding */
+    }
+}

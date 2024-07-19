@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-1B Visa Employers (2021-2023)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div id="header">
+        <div class="app-name">VisaVision.com</div>
+    </div>
+    <div id="nav">
+        <a href="/">Home</a>
+        <a href="/employers">Employers</a>
+        <a href="/h1b_visa">H-1B Visa</a>
+        <a href="/reports">Reports</a>
+        <a href="/visa_approval_predictions">Predictions</a>
+    </div>
+    <div id="content_id" class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flash-messages">
+                    {% for message in messages %}
+                        <li class="flash-error">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <h1>H-1B Employers from 2021 to 2023</h1>
+        <p>Below is a comprehensive list of employers who have hired H-1B visa holders from 2021 to 2023. These employers span various industries and offer a range of opportunities for foreign professionals.</p>
+
+        <!-- Search input -->
+        <input type="text" id="searchInput" placeholder="Search for an employer...">
+        
+        <!-- Employers list -->
+        <ul id="employersList">
+            {% for employer in employers %}
+            <li><a href="{{ url_for('employer', employer_name=employer[0]) }}">{{ employer[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="{{ url_for('static', filename='js/search.js') }}"></script>
+</body>
+</html>
