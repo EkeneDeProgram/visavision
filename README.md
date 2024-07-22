@@ -9,19 +9,20 @@ VisaVision.com is a web-based platform that provides comprehensive analysis and 
     1. [Prerequisites](#prerequisites)
     2. [Installation](#installation)
 3. [Docker](#docker)
-4. [Usage](#usage)
+4. [Testing](#testing)
+5. [Usage](#usage)
     1. [Running the Application](#running-the-application)
     2. [Accessing Features](#accessing-features)
-5. [Features](#features)
+6. [Features](#features)
     1. [Employers Analysis](#employers-analysis)
     2. [H-1B Visa](#h1b-visa)
     3. [Comprehensive Reports](#comprehensive-reports)
     4. [Approval Predictions](#approval-predictions)
-6. [Architecture](#architecture)
+7. [Architecture](#architecture)
     1. [Frontend](#frontend)
     2. [Backend](#backend)
     3. [Database](#database)
-7. [Contributing](#contributing)
+8. [Contributing](#contributing)
 
 
 ## Project Setup
@@ -58,6 +59,7 @@ VisaVision.com is a web-based platform that provides comprehensive analysis and 
     SECRET_KEY=your_secret_key
     MONGO_URI=mongodb://localhost:27017/your_db_name
 
+
 ## Docker
 To run the VisaVision.com web application using Docker, follow these steps:
 1. Build the Docker image:
@@ -69,6 +71,12 @@ To run the VisaVision.com web application using Docker, follow these steps:
    ```sh
    cd <project directory>
    docker-compose up
+
+
+## Testing
+To run test scripts for this project, execute:
+    ```sh
+    pytest
 
 
 ## Usage
