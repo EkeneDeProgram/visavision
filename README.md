@@ -71,11 +71,13 @@ To run the VisaVision.com web application using Docker, follow these steps:
    ```sh
    cd <project directory>
    docker-compose up
+   
 
 
 ## Testing
 To run test scripts for this project, execute:
   ```sh
+  cd <project directory> 
   pytest
   ```
 
@@ -87,6 +89,7 @@ To run test scripts for this project, execute:
 1. Run the development server:
    ```sh
    python run.py
+   
 
 2. Open your browser and navigate to http://127.0.0.1:5000/ to access the application.
 
