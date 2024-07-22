@@ -77,6 +77,7 @@ To run the VisaVision.com web application using Docker, follow these steps:
 To run test scripts for this project, execute:
   ```sh
   pytest
+  ```
 
 
 ## Usage
